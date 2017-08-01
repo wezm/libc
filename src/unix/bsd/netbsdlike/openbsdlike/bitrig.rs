@@ -61,7 +61,9 @@ pub const ALTMON_10: ::nl_item = 67;
 pub const ALTMON_11: ::nl_item = 68;
 pub const ALTMON_12: ::nl_item = 69;
 
+pub const KERN_USERMOUNT: ::c_int = 30;
 pub const KERN_RND: ::c_int = 31;
+pub const KERN_ARND: ::c_int = 37;
 
 extern {
     pub fn nl_langinfo_l(item: ::nl_item, locale: ::locale_t) -> *mut ::c_char;
